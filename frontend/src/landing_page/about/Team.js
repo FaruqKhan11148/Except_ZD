@@ -35,17 +35,17 @@ function Team() {
                         <p className='p'>COO</p>
                     </div>
                     <div className="col-4">
-                        <img src="media/images/Nikhil.jpg" alt="" />
+                        <img src="media/images/Hanan.jpg" alt="" />
                         <h5 className='h5'>Hanan Delvi</h5>
                         <p className='p'>CCO</p>
                     </div>
                     <div className="col-4">
-                        <img src="media/images/Kailash.jpg" alt="" />
+                        <img src="media/images/Seema.jpg" alt="" />
                         <h5 className='h5'>Seema Patil</h5>
                         <p className='p'>Director</p>
                     </div>
                     <div className="col-4">
-                        <img src="media/images/Venu.jpg" alt="" />
+                        <img src="media/images/karthik.jpg" alt="" />
                         <h5 className='h5'>Karthik Rangappa</h5>
                         <p className='p'>Chief of Education</p>
                     </div>
