@@ -26,36 +26,36 @@ function Footer() {
         <div className="col-3 footer">
           <ul>
             <h6>Company</h6>
-            <a href="#">About</a><br />
-            <a href="#">Products</a><br />
-            <a href="#">Pricing</a><br />
-            <a href="#">Referral Programme</a><br />
-            <a href="#">Careers</a><br />
-            <a href="#">Zerodha.tech</a><br />
-            <a href="#">Open source</a><br />
-            <a href="#">Press & media</a><br />
-            <a href="#">Zerodha Cares (CSR)</a>
+            <a href="javascript:void(0)">About</a><br />
+            <a href="javascript:void(0)">Products</a><br />
+            <a href="javascript:void(0)">Pricing</a><br />
+            <a href="javascript:void(0)">Referral Programme</a><br />
+            <a href="javascript:void(0)">Careers</a><br />
+            <a href="javascript:void(0)">Zerodha.tech</a><br />
+            <a href="javascript:void(0)">Open source</a><br />
+            <a href="javascript:void(0)">Press & media</a><br />
+            <a href="javascript:void(0)">Zerodha Cares (CSR)</a>
           </ul>
         </div>
         <div className="col-3 footer">
           <ul>
             <h6>Support</h6>
-            <a href="">Contact us</a><br />
-            <a href="">Support portal</a><br />
-            <a href="">Z-Connect blog</a><br />
-            <a href="">List of charges</a><br />
-            <a href="">Downloads & resources</a><br />
-            <a href="">Videos</a><br />
-            <a href="">Market overview</a><br />
-            <a href="">How to file a complaint?</a><br />
-            <a href="">Status of your complaints</a>
+            <a href="javascript:void(0)">Contact us</a><br />
+            <a href="javascript:void(0)">Support portal</a><br />
+            <a href="javascript:void(0)">Z-Connect blog</a><br />
+            <a href="javascript:void(0)">List of charges</a><br />
+            <a href="javascript:void(0)">Downloads & resources</a><br />
+            <a href="javascript:void(0)">Videos</a><br />
+            <a href="javascript:void(0)">Market overview</a><br />
+            <a href="javascript:void(0)">How to file a complaint?</a><br />
+            <a href="javascript:void(0)">Status of your complaints</a>
           </ul>
         </div>
         <div className="col-3 footer">
           <ul>
             <h6>Account</h6>
-            <a href="">Open an account</a><br />
-            <a href="">Fund transfer</a>
+            <a href="javascript:void(0)">Open an account</a><br />
+            <a href="javascript:void(0)">Fund transfer</a>
           </ul>
         </div>
 
@@ -80,11 +80,11 @@ function Footer() {
             Communication, Speedy redressal of the grievances
           </p>
           <div>
-            <a style={{ textDecoration: 'none' }} href="">
+            <a style={{ textDecoration: 'none' }} href="#" onClick={(e) => e.preventDefault()}>
               Smart Online Dispute Resolution
             </a>{' '}
             |{' '}
-            <a style={{ textDecoration: 'none' }} href="">
+            <a style={{ textDecoration: 'none' }} href="#" onClick={(e) => e.preventDefault()}>
               Grievances Redressal Mechanism
             </a>
           </div>
