@@ -1,73 +1,69 @@
-# zerodha
-MERN based Application
+# 🔷 Zerodha Clone
 
-# Getting Started with Create React App
+A full-stack **MERN (MongoDB, Express.js, React, Node.js)** based web application that replicates the design and functionality of **Zerodha**, India’s leading stock brokerage platform.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This clone features a beautiful landing page, interactive signup process, investment options section, FAQs, and more — built using modern technologies and a clean, scalable architecture.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📌 Features
 
-### `npm start`
+### 🖥 Frontend (React)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- ⚡ Fully responsive landing page
+- 🔒 Signup/Login forms with OTP interface
+- 📊 Investment options (Stocks, Mutual Funds, IPO, F&O)
+- 👥 Account type cards (Individual, NRI, Corporate, etc.)
+- 📃 Step-by-step account opening guide
+- 💸 Unbeaten pricing layout
+- ❓ FAQs accordion
+- 🚦 Smooth routing with React Router
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 🌐 Backend (Node.js + Express)
 
-### `npm test`
+- 🔐 REST API for authentication
+- 🔑 JWT-based Auth system
+- 🧠 MongoDB for user data
+- ⚙️ `.env` support for secure configs
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🗃️ Database (MongoDB)
 
-### `npm run build`
+- MongoDB Atlas connection
+- Clean schema design
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## ⚙️ How It Works
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Landing Page**  
+   Users land on a clean homepage showcasing pricing, benefits, steps to open a Demat account, FAQs, and more.
 
-### `npm run eject`
+2. **Explore Account Types**  
+   Users can view different account types (Individual, HUF, NRI, Minor, Corporate) and select one to proceed with.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. **Signup & Login**  
+   A secure form allows users to register with their email. OTP-style UI mimics real-world Zerodha flow.  
+   Login functionality uses **JWT-based authentication** for security.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. **API Communication**  
+   The frontend communicates with the backend through **RESTful APIs** using `axios`. Data like user info and account types are fetched and stored.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+5. **Authentication Flow**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   - On signup/login, a **JWT token** is issued.
+   - Token is stored in local storage or cookies.
+   - Protected routes use token verification middleware in Express.
 
-## Learn More
+6. **Database Connection**  
+   All user data, auth tokens, and other models are securely stored in **MongoDB Atlas**.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+7. **Environment Configs**  
+   Backend and frontend both use `.env` files to manage API keys, DB URLs, and sensitive data.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+8. **Routing**
 
-### Code Splitting
+   - **React Router** handles frontend navigation (pages like Home, SignUp, FAQs).
+   - **Express Router** handles API routing (`/api/auth/register`, `/api/user`, etc.)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+9. **Deployment Ready**  
+   The build folder generated from React is deployable on services like **Vercel**, **Netlify**, or can be served via **Node/Express** backend.
