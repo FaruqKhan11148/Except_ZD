@@ -7,10 +7,10 @@ function OpenAcc() {
       <p className="text-muted mb-4">
         Simple and intuitive apps &middot; ₹0 for investments &middot; ₹20 for intraday and F&amp;O trades.
       </p>
-      <button className="btn btn-primary px-4 py-2 fw-medium">
+      <button onClick={() => window.location.href = 'http://localhost:3001/signup'} className="btn btn-primary px-4 py-2 fw-medium">
         Signup for free
       </button>
-    </div>
+    </div>  
   );
 }
 

@@ -7,7 +7,7 @@ const cors = require('cors');
 
 const { HoldingsModel } = require('./model/HoldingsModel');
 const { PositionsModel } = require('./model/PositionsModel');
-const { OrdersModel } = require('./model/OrdersModel');
+const { OrdersModel } = require('./model/OrdersModel'); 
 
 const PORT = process.env.PORT || 3003;
 const uri = process.env.MONGO_URI;
@@ -207,8 +207,17 @@ app.post('/newOrder', async (req, res) => {
   res.send('Order is saved!');
 });
 
+app.get('/allOrders', async (req, res) => {
+  try {
+    const allOrders = await OrdersModel.find({});
+    res.json(allOrders);
+  } catch (err) {
+    res.status(500).json({ error: 'Failed to fetch orders' });
+  }
+});
+
 app.listen(PORT, () => {
-  console.log('App Started');
+  console.log('App Started on 3003');
   mongoose.connect(uri);
   console.log('DB Connected');
 });
