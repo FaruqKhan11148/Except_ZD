@@ -187,6 +187,7 @@ app.use(bodyParser.json());
 //   res.send("Done!");
 // });
 
+// route for all holdings
 app.get('/allHoldings', async (req, res) => {
   let allHoldings = await HoldingsModel.find({});
   res.json(allHoldings);
