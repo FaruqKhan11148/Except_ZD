@@ -211,6 +211,7 @@ app.post('/newOrder', async (req, res) => {
   res.send('Order is saved!');
 });
 
+// route for all Orders
 app.get('/allOrders', async (req, res) => {
   try {
     const allOrders = await OrdersModel.find({});
