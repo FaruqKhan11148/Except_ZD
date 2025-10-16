@@ -221,6 +221,7 @@ app.get('/allOrders', async (req, res) => {
   }
 });
 
+// Port Declaration
 app.listen(PORT, () => {
   console.log('App Started on 3003');
   mongoose.connect(uri);
