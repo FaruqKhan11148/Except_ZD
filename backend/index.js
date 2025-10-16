@@ -193,6 +193,7 @@ app.get('/allHoldings', async (req, res) => {
   res.json(allHoldings);
 });
 
+// route for all Positions
 app.get('/allPositions', async (req, res) => {
   let allPositions = await PositionsModel.find({});
   res.json(allPositions);
