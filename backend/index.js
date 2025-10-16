@@ -17,6 +17,7 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
+// These are dummy data for Holdings
 // app.get('/addHoldings', async (req, res) => {
 //   let tempHoldings = [
 //     {
