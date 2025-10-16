@@ -37,11 +37,11 @@
     font-size: 0.6rem;
   }
   
-  /* .market-options {
+  .market-options {
     font-weight: 300;
     color: #fff;
     font-size: 0.8rem;
-  } */
+  }
   
   .market-options label,
   .order-validity label input,
