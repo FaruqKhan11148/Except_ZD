@@ -27,21 +27,21 @@
   }
   
   .header h3 {
-    /* color: #fff;
+    color: #fff;
     font-size: 1rem;
     font-weight: 500;
-    margin-bottom: 6px; */
+    margin-bottom: 6px;
   }
   
   .header h3 span {
     font-size: 0.6rem;
   }
   
-  .market-options {
+  /* .market-options {
     font-weight: 300;
     color: #fff;
     font-size: 0.8rem;
-  }
+  } */
   
   .market-options label,
   .order-validity label input,
